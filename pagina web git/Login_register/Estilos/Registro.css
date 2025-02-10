@@ -1,0 +1,115 @@
+.titulo 
+{
+    font-size: 5rem;
+    color: #00ffdd;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    background-color: whitesmoke;
+}
+
+.registro-row 
+{
+    height: 70vh;
+}
+
+.registro-box 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.registro-box:hover 
+{
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.registro-image 
+{
+    background: url('../Img/Arbol_de_Hora_de_Aventura_de_noche.jpg');
+    background-size: cover;
+    position: fixed;
+    border-radius: 20px;
+    height: 75vh; 
+    position: relative;
+}
+
+.registro-image::before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+.registro-box 
+{
+    z-index: 2;
+}
+
+.btn-registrar 
+{
+    background-color: #adffff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-registrar:hover 
+{
+    background-color: #5bcfe4;
+    transform: scale(1.05);
+}
+
+.btn-registrar:active 
+{
+    background-color: #7dd5eb;
+}
+
+.text-center 
+{
+    margin-top: 20px;
+}
+
+.mt-2 
+{
+    margin-top: 10px;
+}
+
+p 
+{
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) 
+{
+    .login-image 
+    {
+        background-position: center center;
+        background-size: cover;
+    }
+}
